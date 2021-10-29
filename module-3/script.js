@@ -1,3 +1,11 @@
+/*
+Rusty DeGarmo
+Professor Sampson
+Interactive Dev with JavaScript
+29 October 2021
+*/
+
+
 function firstFunction(){
     let sentenceOne = "Then one day I had an epiphany";
 
