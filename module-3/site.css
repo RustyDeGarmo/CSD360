@@ -1,0 +1,13 @@
+p {
+    font-family: Verdana, sans-serif;
+    margin: 2%;
+}
+
+#first, #second, #third, #fourth {
+    font-style: italic;
+}
+
+button {
+    text-align: center;
+    margin-left: 10%;
+}
