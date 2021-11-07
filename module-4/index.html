@@ -1,0 +1,89 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    7 November 2021
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="site.css" type="text/css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <h1>JavaScript Operators</h1>
+        <p>
+            The purpose of this page is to showcase some of the JavaScript operators
+            and their order of operation.
+        </p>
+
+        <h2>Instructions:</h2>
+
+        <ol>
+            <li>
+                Start with the following two lines of JavaScript
+            </li>
+            <ol>
+                <li>
+                    var i = 842;
+                </li>
+                <li>
+                    document.write(i + i % 3 / 7 - 2 + 7 ** 3);
+                </li>
+            </ol>
+            
+            <br />
+
+            <li>Use parentheses to modify the output line to alter the result of 1183.2857142857142 to the following list of outputs.
+            </li>
+            <ul>
+                <li>
+                    341.14285714285717
+                </li>
+                <li>
+                    1185.4
+                </li>
+                <li>
+                    842.0011574074074
+                </li>
+                <li>
+                    113.28571428571433
+                </li>
+            </ul>
+        </ol>
+
+        <hr />
+
+        <p>
+            The equation: <span id="equation">(i + i % 3 / 7 - 2 + 7 ** 3)</span>.
+        </p>
+        <p>
+            Evaluates to: <span id="answer">1183.2857142857142</span>.
+        </p>
+        <h3>
+            Click a button to see the solution
+        </h3>
+
+        <div class = "button">
+            <button type = "button" onclick = "firstFunction()">First Solution</button><br /><br />
+        </div>
+        <div class = "button">
+            <button type = "button" onclick = "secondFunction()">Second Solution</button><br /><br />
+        </div>
+        <div class = "button">
+            <button type = "button" onclick = "thirdFunction()">Third Solution</button><br /><br />
+        </div>
+        <div class = "button">
+            <button type = "button" onclick = "fourthFunction()">Fourth Solution</button><br /><br />
+        </div>
+        <div class = "button">
+            <button type = "button" onclick = "fifthFunction()">Original</button><br /><br />
+        </div>
+
+        <script src="modify.js"></script>
+
+    </body>
+</HTML>

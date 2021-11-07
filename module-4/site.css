@@ -1,0 +1,26 @@
+.button {
+    width: 20%;
+    float: left;
+}
+
+button {
+    width: 98%;
+    text-align: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+body {
+    padding: 2%;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2, h3 {
+    padding-left: 5%;
+}
