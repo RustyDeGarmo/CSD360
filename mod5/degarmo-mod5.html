@@ -1,0 +1,132 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    14 November 2021
+-->
+
+<!--
+    Instructions:
+    1: Start with the following code:
+
+    <script type = "text/javascript">
+        function rollDice(){
+            document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
+            document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
+            document.form1.total.value = parseInt(document.form1.dice1.value) +
+            parseInt(document.form1.dice2.value);
+            var total = parseInt(document.form1.dice1.value) + 
+            parseInt(document.form1.dice2.value);
+            switch(total){}
+        }
+    </script>
+    <form name='form1'>
+        <table border='1'>
+            <tr>
+                <td> Dice 1 </td>
+                <td> <input type='text' name='dice1' /> </td>
+                <td> Dice 2 </td>
+                <td> <input type='text' name='dice2' /> </td>
+                <td> <input type='button' name='button1' onclick='rollDice()' value=' Roll Dice ' /> </td>
+                <td> Total </td>
+                <td> <input type='text' name='total' /> </td>
+            </tr>
+        </table>
+        <input type='button' name='button5' value='Reset' onclick='reset()' />
+    </form>
+
+    2: Build a page correctly holding this code and then complete the switch statements so that the output results will include:
+
+    document.form1.total.value = "Snake Eyes"; /* 2 */
+    document.form1.total.value = "Box Cars"; /* 12 */
+    document.form1.total.value = "You Win"; /* 7 or 11 */
+    document.form1.total.value = total; /* All remaining values */
+
+-->
+
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod5.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>JavaScript Switch</h1>
+        <br /> <br />
+
+        <h2>Instructions:</h2>
+        <ol>
+            <li>
+                Start with the provided code (Shown in the comments. View source to see.).
+            </li>
+            <li>
+                Build a page correctly holding the provided code and complete the switch statements so that the output results will include:
+            </li>
+            <ul>
+                <li>Snake Eyes for double 1s</li>
+                <li>Box Cars for double 6s</li>
+                <li>You Win for 7 or 11</li>
+                <li>Otherwise display the total</li>
+            </ul>
+        </ol>
+        <hr /> <br />
+        
+        <script type = "text/javascript">
+            function rollDice(){
+                document.form1.dice1.value = Math.floor((Math.random() * 6) + 1);
+                document.form1.dice2.value = Math.floor((Math.random() * 6) + 1);
+                document.form1.total.value = parseInt(document.form1.dice1.value) +
+                parseInt(document.form1.dice2.value);
+                var total = parseInt(document.form1.dice1.value) + 
+                parseInt(document.form1.dice2.value);
+                switch(total){
+                    case 2:{
+                        document.form1.total.value = "Snake Eyes!";
+                        break;
+                    }
+                    case 12:{
+                        document.form1.total.value = "Box Cars!";
+                        break;
+                    }
+                    case 7:
+                    case 11: {
+                        document.form1.total.value = "You Win!";
+                        break;
+                    }
+                    default:
+                        document.form1.total.value = total;
+                }
+            }
+            
+        </script>
+
+        <form name='form1'>
+            <table border='1'>
+                <tr>
+                    <td> Dice 1 </td>
+                    <td> <input type='text' name='dice1' /> </td>
+                    <td> Dice 2 </td>
+                    <td> <input type='text' name='dice2' /> </td>
+                    <td> <input type='button' name='button1' onclick="rollDice()" value=' Roll Dice ' /> </td>
+                    <td> Total </td>
+                    <td> <input type='text' name='total' /> </td>
+                </tr>
+            </table>
+            <input type='button' name='button5' value='Reset' onclick='reset()' /> 
+        </form>
+
+        <br /> <br />
+        <footer>
+            <a href="../index.html">
+                Home
+            </a>
+        </footer>
+
+    </body>
+</HTML>
+
+
+
+
