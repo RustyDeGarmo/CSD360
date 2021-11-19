@@ -1,0 +1,35 @@
+/*
+Rusty DeGarmo
+Professor Sampson
+Interactive Dev with JavaScript
+*/
+
+body {
+    padding: 2%;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2, h3 {
+    padding-left: 5%;
+}
+
+header {
+    background-color: #D5EACF;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #D5EACF;
+    padding: 2px;
+}
+
+#container {
+    background-color: white;
+    padding: 5px;
+}
+

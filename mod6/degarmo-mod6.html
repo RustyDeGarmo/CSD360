@@ -1,0 +1,107 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    18 November 2021
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod6.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>JavaScript Loops</h1>
+        <br />
+
+        <h2>Instructions:</h2>
+
+        <ol class='card'>
+            <li>
+                Create a page that displayse the first 30 fibonacci numbers. The output should look something like:
+            </li>
+                <ul>
+                    <li>First 30 Fibonacci Numbers</li>
+                    <ul>
+                        <li>1 - 1</li>
+                        <li>2 - 1</li>
+                        <li>3 - 2</li>
+                        <li>4 - 3</li>
+                        <li>...</li>
+                        <li>27 - 196418</li>
+                        <li>28 - 317811</li>
+                        <li>29 - 514229</li>
+                        <li>30 - 832040</li>
+                    </ul>
+                </ul>
+            <br />
+            <li>
+                The output numbers in this sequence are the first two and then after the second number the sum of the previous numbers. To correctly output the numbers, use logic similar to the following:
+            </li>
+            <ul>
+                <li>Declare all variables needed</li>
+                <li>Display your page title</li>
+                <li>Display the first variable with a value of 1, example: "1 - 1"</li>
+                <li>Display the second variable with a value of 1, Example: "2 - 1"</li>
+                <li>Start a for loop giving the counter a value of 3</li>
+                <li>Test the counter to ensure a value less than or equal to 30</li>
+                <li>Assign a totalizer variable with the added values of the first and second variables</li>
+                <li>Output the values of counter and totalizer each iteration</li>
+                <li>Assign the first variable the value of the second</li>
+                <li>Assign the second variable the value of the totalizer</li>
+                <li>Increment the counter</li>
+                <li>Test the loop again</li>
+                <li>Use document.write to display the output</li>
+                <li>Syntax help:</li>
+                <ul>
+                    <li>for(counter = 3; counter <= 30; counter++) { </li>
+                </ul>
+            </ul>
+        </ol>
+
+        <hr /> <br />
+
+        <h3>Fibonacci Output</h3>
+
+            <div id='fibonacci'>
+                <script>
+                    let first = 1;
+                    let second = 1;
+                    let fibonacci = first + second;
+
+                    document.write('<ol>');
+                    document.write('<li>' + first + '</li>');
+                    document.write('<li>' + second + '</li>');
+                    
+
+                    for(count = 3; count <= 30; count++){
+                        fibonacci = first + second;
+                        document.write('<li>' + first + ' + ' + second + ' = ' + fibonacci + '</li>');
+
+                        first = second;
+                        second = fibonacci;
+                    }
+                    document.write('</ol>')
+                </script>
+            </div><!-- end of fibonacci -->
+
+            <hr />
+
+            <p>
+                To modify the length of the display we only need to change the termination condition of the loop. We could do this dynamically with on page controls, but then we would want to use innerHTML instead of document.write().
+            </p>
+            
+        <footer>
+            <a href="../index.html">
+                Home
+            </a>
+        </footer>
+
+
+    </body>
+</HTML>
+
+
+
