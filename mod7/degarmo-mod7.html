@@ -1,0 +1,72 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    28 November 2021
+-->
+
+<!--
+    For this assignment, create an array of 10 favorite sport teams, or movies, 
+    or books. Using a for loop, print the array first in the original array order and 
+    then in reverse order. 
+-->
+
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod7.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>JavaScript Loops Going Both Ways</h1>
+        <br />
+
+        <h2>Instructions:</h2>
+
+        <p class='card'>
+            For this assignment, create an array of 10 favorite sport teams, 
+            or movies, or books. Using a for loop, print the array first in 
+            the original array order and then in reverse order.
+        </p>
+
+        <hr /> <br />
+        <h3>A list of my favorite movies in no particular order</h3>
+        <p id='loop'>
+            <script>
+                let favArray = ["Star Wars: A New Hope", "Dawn of the Dead", "Alien", 
+                    "Indiana Jones", "Jaws", "Blade Runner", "Die Hard", "Harry Potter", 
+                    "IT", "28 Days Later"];
+                document.write("<ol>");
+                for(let i = 0; i < favArray.length; i++){
+                    document.write("<li>" + favArray[i] + "</li>");
+                }
+                document.write("</ol>");
+
+                document.write("<h3>The same list in reverse order</h3>");
+
+                favArray.reverse();
+                
+                document.write("<ol>");
+                for(let i = 0; i < favArray.length; i++){
+                    document.write("<li>" + favArray[i] + "</li>");
+                }
+                document.write("</ol>");
+
+            </script>
+        </p>
+        
+            
+        <footer>
+            <a href="../index.html">
+                Home
+            </a>
+        </footer>
+
+
+    </body>
+</HTML>
+
+
+
