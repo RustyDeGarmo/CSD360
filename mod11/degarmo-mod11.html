@@ -1,0 +1,99 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    11 December 2021
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod11.css" type="text/css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+
+            <h1>CSD 360</h1>
+            <h1>Altering Elements with User Input</h1>
+
+        </header>
+
+        <h2>Instructions:</h2>
+        <div class='card'>
+            <p>
+                Create a page similar to the example attacxhed to this assignment 
+                that alters the DOM based on user input. Use at least five (5) 
+                images.
+            </p>
+            <p>
+                Create a function that is executed when an image is clicked, using the 
+                "onclick" MouseEvent. You need to create your own function, different 
+                from either example.
+            </p>
+
+        </div>
+
+        <hr /><br />
+        <p>
+            Sadly, I had to reuse material from the previous module due to time obligations 
+            this week. I believe that the requirements are still met with this entry though. 
+            The satisficing is real.
+        </p>
+        <p>
+            The eight images below show some of my favorite ways to spend my free time. Hover 
+            over an image to reveal some of my interests. Click an image to view a larger 
+            version below the description.
+        </p>
+
+        <div id='images'>
+            <div class='image'>
+                <img id='imageOne' src='images/Square.jpg' onclick='displayImageOnClick("EFT.jpg")' alt='Library'>
+            </div>
+            <div class='image'>
+                <img id='imageTwo' src='images/Square.jpg' onclick='displayImageOnClick("Hunt.jpg")' alt='Escape from Tarkov'>
+            </div>
+            <div class='image'>
+                <img id='imageThree' src='images/Square.jpg' onclick='displayImageOnClick("Fortnite.jpg")' alt='Hunt: Showdown'>
+            </div>
+            <div class='image'>
+                <img id='imageFour' src='images/Square.jpg' onclick='displayImageOnClick("Library.jpg")' alt='Fortnite'>
+            </div>
+        </div>
+        <div id='images'>
+            <div class='image'>
+                <img id='imageFive' src='images/Square.jpg' onclick='displayImageOnClick("hiking.jpg")' alt='Hiking'>
+            </div>
+            <div class='image'>
+                <img id='imageSix' src='images/Square.jpg' onclick='displayImageOnClick("yoga.jpg")' alt='Yoga'>
+            </div>
+            <div class='image'>
+                <img id='imageSeven' src='images/Square.jpg' onclick='displayImageOnClick("lake.jpg")' alt='Lake'>
+            </div>
+            <div class='image'>
+                <img id='imageEight' src='images/Square.jpg' onclick='displayImageOnClick("travel.jpg")' alt='Travel'>
+            </div>
+        </div> <!-- end of images -->
+        <div id='clear'></div>
+
+        <div id='description'>A description of the activity will appear here when 
+            you hover over an image.
+        </div>
+
+        <div id='bigImageDiv'>
+            <img id='bigImage' src='' alt="Large Image">
+        </div>
+
+        <script src='mod11.js'></script>
+
+    </body>
+    <footer>
+        <a href="../index.html">
+                    Home
+        </a>
+    </footer>
+</HTML>
+

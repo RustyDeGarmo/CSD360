@@ -1,0 +1,64 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    5 December 2021
+-->
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod9.css" type="text/css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <header>
+
+            <h1>CSD 360</h1>
+            <h1>Counting Array Elements</h1>
+
+        </header>
+        <div class='card'>
+            <p>
+                For this assignment, create a function titled counter that takes an array 
+                of numbers as the parameter. The function is then to return an array 
+                holding the numbers of negative elements, zeros, and values greater than 
+                zero in the given array parameter.
+            </p>
+            <p>
+                ** Test your code with at least three arrays that you proved. Ideally, 
+                the user (me) would see the original array, and then the count.
+            </p>
+        </div>
+
+        <hr /><br />
+        <p>
+            My interpretation of these instructions is to create an array, count 
+            how many of each positive, negative, and zero values there are in 
+            the array, and then finally to display those results. I have chosen 
+            to randomize the arrays and allow the user to generate them with the 
+            click of a button.
+        </p>
+        <p>
+            You can generate arrays by clicking the button below.
+        </p>
+
+        <button type = "button" onclick = "threeRandomArrays()">Get Arrays</button>
+
+        <p id='counter'>
+            
+        </p>
+
+        <script src='mod9.js'></script>
+
+    </body>
+    <footer>
+        <a href="../index.html">
+                    Home
+        </a>
+    </footer>
+</HTML>
+

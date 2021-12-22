@@ -5,6 +5,15 @@ Interactive Dev with JavaScript
 29 October 2021
 */
 
+body {
+    padding: 2%;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
 p {
     font-family: Verdana, sans-serif;
     margin: 2%;

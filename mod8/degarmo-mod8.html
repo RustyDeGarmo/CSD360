@@ -1,0 +1,105 @@
+<!--
+    Rusty DeGarmo
+    Professor Sampson
+    Interactive Dev with JavaScript
+    28 November 2021
+-->
+
+<!--
+    For this assignment, create an array of 10 favorite sport teams, or movies, 
+    or books. Using a for loop, print the array first in the original array order and 
+    then in reverse order. 
+-->
+
+
+<!DOCTYPE HTML>
+<HTML lang='en'>
+
+    <head>
+        <link href="mod8.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>CSD 360</h1>
+        <h1>JavaScript Populating Table Data</h1>
+        <br />
+
+        <h2>Instructions:</h2>
+
+            <ol class='card'>
+                <li>
+                    Create a web page that displays a table of the values of 
+                    4 to 14 displaying their:
+                </li>
+                <ul>
+                    <li>Initial Value</li>
+                    <li>Square Root (with only two digits to the right of the decimal)
+                    </li>
+                    <li>The base multiplied to the power of 2</li>
+                    <li>The base multiplied to the power of 3</li>
+                </ul>
+                <li>
+                    Display a table containing the values useing loop iteration
+                </li>
+                <ul>
+                    <li>
+                        Ensure you include using methods sqrt() and pow() 
+                        in the display
+                    </li>
+                </ul>
+            </ol> 
+
+        <hr /> <br />
+        
+        <h3>Display Table Containing the Values Using Loop Iteration</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Initial Value</th>
+                    <th>Square Root</th>
+                    <th>Power of 2</th>
+                    <th>Power of 3</th>
+                </tr>
+            </thead>
+            <tbody id='tData'></tbody>
+        </table>
+        
+
+
+
+            
+        <footer>
+            <a href="../index.html">
+                Home
+            </a>
+        </footer>
+
+        <script src='mod8.js'>
+            /*
+            let baseNumbers = [];
+            for(let i = 4; i <= 14; i++){
+                baseNumbers.push(i);
+            }
+
+                        
+            let taData = document.getElementById("tData");
+            baseNumbers.forEach( number => {
+                let row = taData.insertRow();
+                let baseNumber = row.insertCell(0);
+                baseNumber.innerHTML = number;
+                let squareRoot = row.insertCell(1);
+                squareRoot.innerHTML = Math.sqrt(number).toFixed(2);
+                let squareNumber = row.insertCell(2);
+                squareNumber.innerHTML = Math.pow(number, 2);
+                let cubicNumber = row.insertCell(3);
+                cubicNumber.innerHTML = Math.pow(number, 3);
+            })
+            */
+        </script>
+
+    </body>
+</HTML>
+
+
+
